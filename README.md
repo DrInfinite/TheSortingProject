@@ -1,6 +1,6 @@
 # The Sorting Project
 
-<h3 align="center">The consummate compendium for acquiring erudition in the art of categorization</h3>
+<h3>The consummate compendium for acquiring erudition in the art of categorization</h3>
 
 The Sorting Project is a fun little Open-Source project that I chose to pursue in my free time.
 There are quite literally dozens of sorting algorithms and I thought it would be fun to implement
@@ -61,10 +61,18 @@ To do this, you will need to open a terminal and navigate to the directory where
 Once you are in the directory, you will need to run the following command:
 
 ```bash
-git clone
+git clone https://github.com/DrInfinite/TheSortingProject.git
 ```
 
-Once you have cloned the repository, you will need to open the project in VSCode.
+Alternatively, you can also use the GitHub CLI to clone the repository.
+
+```bash
+gh repo clone DrInfinite/TheSortingProject
+```
+
+You may also download the repository as a ZIP file and extract it to your desired directory.
+
+Once you have a copy of the repository, you will need to open the project in VSCode.
 To do this, you will need to open a terminal and navigate to the directory where you cloned the repository.
 Once you are in the directory, you will need to run the following command:
 
@@ -90,4 +98,5 @@ This project is licensed under the [GNU General Public License](LICENSE). Please
 
 - [LICENSE](LICENSE) was selected using [Choose a License](https://choosealicense.com/). The License text was created using [GNU](https://www.gnu.org/licenses/gpl-3.0.en.html).
 - [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) was created using [Contributor Covenant](https://www.contributor-covenant.org/).
+- [CONTRIBUTING.md](CONTRIBUTING.md) starting template was created using [CONTRIBUTING.md](https://contributing.md/).
 - [.gitignore](.gitignore) was created using [gitignore.io](https://www.toptal.com/developers/gitignore).
