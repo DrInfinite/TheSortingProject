@@ -20,3 +20,5 @@ All notable changes to this project will be documented in this file. This projec
 - #4: Implemented 2 selection sort algorithms:
   - Selection Sort
   - Stable Selection Sort
+
+- #5: Implemented Boilerplate code and All available algorithms in Common JS syntax
