@@ -1,52 +1,45 @@
 // Only for Bubble Sort and its variations
-export function swap(arr: number[], xp: number, yp: number) {
+export const swap = (arr: number[], xp: number, yp: number) => {
   var temp = arr[xp];
   arr[xp] = arr[yp];
   arr[yp] = temp;
 }
 
-class PrintArray {
-  public static normalArray(array: number[]) {
-    console.log("Before Sorting: " + "\n" + array + "\n");
-  };
-
-  public static sortedArray(array: number[]) {
-    console.log("After Sorting: " + "\n" + array + "\n");
-  };
+const normalArray = (array: number[]) => {
+  console.log("Before Sorting: " + "\n" + array + "\n");
 }
 
-class RandomArray {
-  public static randomArray(size: number): number[] {
-    let array: number[] = [];
-    for (let i = 0; i < size; i++) {
-      array.push(Math.floor(Math.random() * 25600));
-    }
-    return array;
-  };
+const sortedArray = (array: number[]) => {
+  console.log("After Sorting: " + "\n" + array + "\n");
 }
 
-class TimeTaken {
-  public static timeTaken(callback: Function): string {
-    const startTime = Date.now();
-    callback();
-    const endTime = Date.now();
-    return `Time taken: ${endTime - startTime} milliseconds`;
+const randomArray = (size: number): number[] => {
+  let array: number[] = [];
+  for (let i = 0; i < size; i++) {
+    array.push(Math.floor(Math.random() * 25600));
   }
+  return array;
 }
 
-export function mainMethod(callback: Function) {
-  let array = RandomArray.randomArray(4096);
-  PrintArray.normalArray(array);
-  const time = TimeTaken.timeTaken(() => callback(array));
-  PrintArray.sortedArray(array);
+const timeTaken = (callback: Function): string => {
+  const startTime = Date.now();
+  callback();
+  const endTime = Date.now();
+  return `Time taken: ${endTime - startTime} milliseconds`;
+}
+
+export const mainMethod = (callback: Function) => {
+  let array = randomArray(4096 * 4);
+  normalArray(array);
+  const time = timeTaken(() => callback(array));
+  sortedArray(array);
   console.log(time);
 }
 
-export function mainMethodTwo(callback: Function) {
-  let array = RandomArray.randomArray(4096);
-  PrintArray.normalArray(array);
-  const time = TimeTaken.timeTaken(() => callback(array, array.length));
-  PrintArray.sortedArray(array);
+export const mainMethodTwo = (callback: Function) => {
+  let array = randomArray(4096 * 4);
+  normalArray(array);
+  const time = timeTaken(() => callback(array, array.length));
+  sortedArray(array);
   console.log(time);
 }
-

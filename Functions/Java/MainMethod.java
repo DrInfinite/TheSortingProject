@@ -11,7 +11,8 @@ public class MainMethod {
     System.out.println("After Sorting: " + "\n" + Arrays.toString(array) + "\n");
   }
 
-  public static int[] randomArray(int size) {
+  public static int[] randomArray() {
+    int size = 4096 * 4;
     int[] array = new int[size];
     for (int i = 0; i < size; i++) {
       array[i] = (int) (Math.random() * 25600);
