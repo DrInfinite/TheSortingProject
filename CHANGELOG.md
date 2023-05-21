@@ -12,3 +12,11 @@ All notable changes to this project will be documented in this file. This projec
   - Bubble Sort
   - Optimised Bubble Sort
   - Recursive Bubble Sort
+
+- #3: Updated Boilerplate code for 2 languages:
+  - Java
+  - TypeScript + (Updated tsconfig.json)
+
+- #4: Implemented 2 selection sort algorithms:
+  - Selection Sort
+  - Stable Selection Sort
