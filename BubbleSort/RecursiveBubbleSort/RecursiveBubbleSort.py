@@ -17,7 +17,7 @@ def recursiveBubbleSort(arr, size):
 
 if __name__ == "__main__":
     array = []
-    for i in range(4096):
+    for i in range(4096*4):
         array.append(random.randint(0, 25600))
     print(f"Before Sorting: \n{array} \n")
 

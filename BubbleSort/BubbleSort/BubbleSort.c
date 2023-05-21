@@ -11,12 +11,14 @@ void bubbleSort(int arr[], int n)
 
 int main(int argc, char const *argv[])
 {
-  int size = 4096;
+  int size = 4096 * 4;
   int *array = randomArray(size);
   normalArray(array, size);
+
   clock_t startTime = clock();
   bubbleSort(array, size);
   clock_t endTime = clock();
+
   sortedArray(array, size);
   timeTaken(startTime, endTime);
   return 0;

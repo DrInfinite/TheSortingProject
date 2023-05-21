@@ -15,7 +15,7 @@ class RecursiveBubbleSortAlgorithm {
 
 public class RecursiveBubbleSort {
   public static void main(String[] args) {
-    int[] array = MainMethod.randomArray(4096);
+    int[] array = MainMethod.randomArray();
     MainMethod.normalArray(array);
 
     long startTime = System.currentTimeMillis();
